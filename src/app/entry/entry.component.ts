@@ -12,4 +12,9 @@ export class EntryComponent implements OnInit {
   ngOnInit() {
   }
 
+  scanSuccessHandler(e) {
+    console.log('https://measuring.h-wie-honig.de/redirecter.php?unit=' + e);
+    window.location.href = 'https://measuring.h-wie-honig.de/redirecter.php?unit=' + e;
+  }
+
 }

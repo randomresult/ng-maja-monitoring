@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { EntryComponent } from './entry/entry.component';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+
 
 @NgModule({
   declarations: [
@@ -15,6 +17,7 @@ import { EntryComponent } from './entry/entry.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ZXingScannerModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
