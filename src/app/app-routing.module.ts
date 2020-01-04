@@ -5,11 +5,11 @@ import { EntryComponent } from './entry/entry.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'test',
     redirectTo: '/maja',
     pathMatch: 'full'
   },
-  { path: 'maja', component: EntryComponent },
+  { path: '', component: EntryComponent },
 ];
 
 @NgModule({
